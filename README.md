@@ -1,63 +1,15 @@
-Tagger for [Automatic1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
----
-Interrogate booru style tags for single or multiple image files using various models, such as DeepDanbooru.
+## これは何ですか？ What is this?
 
-[한국어를 사용하시나요? 여기에 한국어 설명서가 있습니다!](README.ko.md)
+これはWD14taggerに少しの改造を加え「wd-vit-tagger-v3」「wd-swinv2-tagger-v3」「wd-convnext-tagger-v3」などの最新モデルを使えるようにしたものです。stable Diffusion WebUI1111版やfrge版などでお使いいただけます。
 
-## Disclaimer
-I didn't make any models, and most of the code was heavily borrowed from the [DeepDanbooru](https://github.com/KichangKim/DeepDanbooru) and MrSmillingWolf's tagger.
+This is a WD14tagger with a few modifications to allow the latest models such as "wd-vit-tagger-v3", "wd-swinv2-tagger-v3", "wd-convnext-tagger-v3", etc. stable Diffusion WebUI1111 edition, frge edition, etc.
 
-## Installation
-1. *Extensions* -> *Install from URL* -> Enter URL of this repository -> Press *Install* button
-   - or clone this repository under `extensions/`
-      ```sh
-      $ git clone https://github.com/picobyte/stable-diffusion-webui-wd14-tagger.git extensions/tagger
-      ```
+![screenshot](https://github.com/Kataragi/stable-diffusion-webui-tagger-fork/assets/165531533/6ac49031-ff37-4aee-88f6-5f3966547248)
 
-1. *(optional)* Add interrogate model
-   - #### [*Waifu Diffusion 1.4 Tagger by MrSmilingWolf*](docs/what-is-wd14-tagger.md)
-      Downloads automatically from the [HuggingFace repository](https://huggingface.co/SmilingWolf/wd-v1-4-vit-tagger) the first time you run it.
+偉大なる先駆者
 
-   - #### *DeepDanbooru*
-      1. Various model files can be found below.
-         - [DeepDanbooru models](https://github.com/KichangKim/DeepDanbooru/releases)
-         - [e621 model by 🐾Zack🐾#1984](https://discord.gg/BDFpq9Yb7K)
-            *(link contains NSFW contents!)*
+Great Pioneer
 
-      1. Move the project folder containing the model and config to `models/deepdanbooru`
-
-      1. The file structure should look like:
-         ```
-         models/
-         └╴deepdanbooru/
-           ├╴deepdanbooru-v3-20211112-sgd-e28/
-           │ ├╴project.json
-           │ └╴...
-           │
-           ├╴deepdanbooru-v4-20200814-sgd-e30/
-           │ ├╴project.json
-           │ └╴...
-           │
-           ├╴e621-v3-20221117-sgd-e32/
-           │ ├╴project.json
-           │ └╴...
-           │
-           ...
-         ```
-
-1. Start or restart the WebUI.
-   - or you can press refresh button after *Interrogator* dropdown box.
-   - "You must close stable diffusion completely after installation and re-run it!"
+https://github.com/picobyte/stable-diffusion-webui-wd14-tagger
 
 
-## Model comparison
-[Model comparison](docs/model-comparison.md)
-
-## Screenshot
-![Screenshot](docs/screenshot.png)
-
-Artwork made by [hecattaart](https://vk.com/hecattaart?w=wall-89063929_3767)
-
-## Copyright
-
-Public domain, except borrowed parts (e.g. `dbimutils.py`)
