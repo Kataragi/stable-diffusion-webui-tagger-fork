@@ -57,7 +57,7 @@ interrogators: Dict[str, Interrogator] = {
         repo_id='deepghs/ml-danbooru-onnx',
         model_path='TResnet-D-FLq_ema_6-30000.onnx'
     ),
-  'wd-vit-tagger-v3 ': WaifuDiffusionInterrogator(
+    'wd-vit-tagger-v3 ': WaifuDiffusionInterrogator(
         'wd-vit-tagger-v3 ',
         repo_id='SmilingWolf/wd-vit-tagger-v3'
     ),
