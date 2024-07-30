@@ -69,6 +69,10 @@ interrogators: Dict[str, Interrogator] = {
         'wd-convnext-tagger-v3 ',
         repo_id='SmilingWolf/wd-convnext-tagger-v3'
     ),
+    'Z3D-E621-Convnext ': WaifuDiffusionInterrogator(
+        'Z3D-E621-Convnext ',
+        repo_id='silveroxides/Z3D-E621-Convnext'
+    ),
 }
 
 
