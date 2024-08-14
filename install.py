@@ -8,6 +8,13 @@ from launch import run, python
 
 # ONNX Runtime GPUバージョンをアンインストール
 subprocess.run([python, '-m', 'pip', 'uninstall', 'onnxruntime-gpu', '-y'])
+# 最新バージョンをインストール
+subprocess.run(['python', '-m', 'pip', 'install', 'onnxruntime-gpu'])
+
+# ONNX Runtimeバージョンをアンインストール
+subprocess.run([python, '-m', 'pip', 'uninstall', 'onnxruntime', '-y'])
+# 最新バージョンをインストール
+subprocess.run(['python', '-m', 'pip', 'install', 'onnxruntime'])
 
 # 必要なONNX関連ライブラリをインストール
 subprocess.run([python, '-m', 'pip', 'install', 'onnx', 'onnxruntime', 'onnx-graphsurgeon'])
